@@ -1,0 +1,3 @@
+<app-header (sideNavToggled)="sideNavStatus=$event;"></app-header>
+<app-sidebar [sideNavStatus]="sideNavStatus" ></app-sidebar>
+<app-body [sideNavStatus]="sideNavStatus"></app-body>

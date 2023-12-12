@@ -1,0 +1,18 @@
+<div class="container" [ngClass]="{'large-container':sideNavStatus}">
+    <div class="banner">
+        <img src="assets/images/banner.png">
+    </div>
+    <div class="list-container">
+        <div class="vid-list"  *ngFor="let num of numlist">
+            <img [routerLink]="'/video'" src="assets/images/thumbnail{{num}}.png" class="thumbnail">
+            <div class="flex-div">
+                <img src="assets/images/Jack.png">
+                <div class="vid-info">
+                    <a href="#">Best Channel to learn Coding</a>
+                    <p>Easy Tutorials</p>
+                    <p>2 k likes &bull; 2 Days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
